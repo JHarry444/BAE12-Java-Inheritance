@@ -35,11 +35,15 @@ public class App {
 
 		m.communicate();
 
-		((Dog) m).fetch();
+		((Dog) m).fetch(); // not nice syntax
 
-		Dog d = (Dog) m;
+		Dog dog = (Dog) m; // nicer syntax
 
-		d.fetch();
+		dog.fetch();
+
+		double d = (double) 5 / 3;
+
+		System.out.println(d);
 	}
 
 }
