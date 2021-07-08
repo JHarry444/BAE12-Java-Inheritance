@@ -1,5 +1,9 @@
 package animal;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import animal.bird.Eagle;
 import animal.mammal.Bat;
 import animal.mammal.Cow;
 import animal.mammal.Dog;
@@ -44,6 +48,17 @@ public class App {
 		double d = (double) 5 / 3;
 
 		System.out.println(d);
+
+		List<Flyable> flying = new LinkedList<>();
+
+		flying.add(new Bat("Grey"));
+		flying.add(new Eagle());
+
+		System.out.println(flying);
+
+		for (Flyable f : flying) {
+			f.fly();
+		}
 	}
 
 }

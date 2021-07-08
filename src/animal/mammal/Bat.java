@@ -1,6 +1,8 @@
 package animal.mammal;
 
-public class Bat extends Mammal {
+import animal.Flyable;
+
+public class Bat extends Mammal implements Flyable {
 
 	public Bat(String colour) {
 		this.setNoOfLegs(2);
@@ -17,6 +19,7 @@ public class Bat extends Mammal {
 		System.out.println("My super sonic sonar radar will help me");
 	}
 
+	@Override
 	public void fly() {
 		System.out.println("flap flap flap");
 	}
